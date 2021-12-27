@@ -11,8 +11,8 @@ pool:
 
 variables:
   solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
-  buildConfiguration: 'Debug'
+  buildPlatform: x64
+  buildConfiguration: debug
   appxPackageDir: '$(build.artifactStagingDirectory)\AppxPackages\\'
 
 steps:
