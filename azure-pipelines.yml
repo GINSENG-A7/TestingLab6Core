@@ -30,5 +30,6 @@ steps:
     msbuildArgs: '/p:AppxBundlePlatforms="$(buildPlatform)" /p:AppxPackageDir="$(appxPackageDir)" /p:AppxBundle=Always /p:UapAppxPackageBuildMode=StoreUpload'
 
 - task: VSTest@2
-
-- task: VSTest@1
+  inputs:
+    testSelector: 'Demo.cs'
+    
