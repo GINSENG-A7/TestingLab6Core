@@ -59,6 +59,7 @@ namespace Lab6Core
             driver.FindElement(By.CssSelector(".catalog-product:nth-child(2) > .catalog-product__name > span")).Click();
             js.ExecuteScript("window.scrollTo(0,3)");
             driver.FindElement(By.CssSelector(".button-ui_icon")).Click();
+            System.Threading.Thread.Sleep(1000);
             driver.FindElement(By.CssSelector(".wishlist-login-modal__buttons > .ui-link")).Click();
             var elements = driver.FindElements(By.CssSelector(".wishlist-link__badge"));
             Assert.True(elements.Count > 0);
