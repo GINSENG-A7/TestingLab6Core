@@ -11,7 +11,7 @@ using System.Text;
 namespace Lab6Core
 {
     //[TestFixture]
-    class Demo
+    class Tests
     {
         private IWebDriver driver;
         public IDictionary<string, object> vars { get; private set; }
