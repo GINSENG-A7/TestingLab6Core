@@ -31,5 +31,5 @@ steps:
 
 - task: VSTest@2
   inputs:
-    testSelector: 'Demo.cs'
+    testSelector:
     
